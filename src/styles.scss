@@ -1,0 +1,60 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;700&display=swap");
+@import "app/ripple/ripple";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  user-select: none;
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Slab", serif;
+  color: #444;
+  background-color: #f3f3f3;
+  height: 100vh;
+  padding: 2rem;
+}
+
+// COMPONENTS
+
+button {
+  border: solid 3px darkgray;
+  border-radius: 0.5rem;
+  background-image: linear-gradient(lightgray, gray);
+  padding: 1rem;
+  margin: 1rem;
+  font: inherit;
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
+  color: inherit;
+  transition: 0.2s;
+
+  &:active {
+    border-color: lightgray;
+    background-image: linear-gradient(lightgray, darkgray);
+  }
+}
+
+input {
+  border: solid 1px darkgray;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  font: inherit;
+  font-weight: 700;
+  outline: none;
+  color: inherit;
+  transition: 0.2s;
+
+  &:focus {
+    border-color: lightgray;
+  }
+}

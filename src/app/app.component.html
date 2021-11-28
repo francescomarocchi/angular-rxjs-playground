@@ -63,3 +63,13 @@
     <h1>Most Rippled container ever</h1>
   </div>
 </div>
+
+<div class="chrono">
+  <button type="button"
+          (click)="startChrono()">START</button>
+  <button type="button"
+          (click)="stopChrono()">STOP</button>
+          <button type="button"
+          (click)="resetChrono()">RESET</button>
+  <span>{{ chronoService | async | date:'HH:mm:ss:SS' }}</span>
+</div>

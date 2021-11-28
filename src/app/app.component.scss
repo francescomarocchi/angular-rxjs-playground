@@ -7,6 +7,7 @@
 .simple {
   flex: 1;
   font-size: large;
+  text-align: center;
 }
 
 .container {
@@ -39,5 +40,20 @@
 
   .dropped {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.chrono {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: large;
+  flex: 1;
+
+  span {
+    text-align: center;
+    flex-basis: 100%;
+    font-family: monospace;
+    font-size: xxx-large;
   }
 }

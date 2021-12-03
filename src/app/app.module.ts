@@ -8,6 +8,9 @@ import { SimpleViewComponent } from './headless-components/views/simple-view.com
 import { PinchModule } from './pinch/pinch.module';
 import { PullToRefreshModule } from './pull-refresh/pull-to-refresh.module';
 import { RippleModule } from './ripple/ripple.module';
+import { HostBlameStrategyDirective } from './strategy-directives/host-blame-strategy.directive';
+import { HostGreetStrategyDirective } from './strategy-directives/host-greet-strategy.directive';
+import { AppStrategyHost } from './strategy-directives/strategy-host.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +19,9 @@ import { RippleModule } from './ripple/ripple.module';
     LessSimpleComponent,
     NotSoSimpleComponent,
     LogicDirective,
+    AppStrategyHost,
+    HostGreetStrategyDirective,
+    HostBlameStrategyDirective
   ],
   imports: [BrowserModule, RippleModule, PullToRefreshModule, PinchModule],
   providers: [],

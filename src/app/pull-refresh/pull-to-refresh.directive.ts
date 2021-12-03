@@ -12,10 +12,12 @@ import {
   LOADING,
   PULL,
   PULLED_DISTANCE,
+  PULL_PROVIDERS,
 } from './pull-to-refresh.providers';
 
 @Directive({
   selector: '[appPullToRefresh]',
+  providers: [PULL_PROVIDERS],
 })
 export class PullToRefreshDirective implements OnDestroy {
   private readonly subscriptions = new Subscription();

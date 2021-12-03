@@ -26,6 +26,8 @@ export const PULL_PROVIDERS: Provider[] = [
     deps: [LOADED, ElementRef],
     useFactory: pullFactory,
   },
+];
+export const LOADING_PROVIDERS: Provider[] = [
   { provide: LOADED, useValue: new Subject<void>() },
   { provide: LOADING, useValue: new Subject<void>() },
 ];

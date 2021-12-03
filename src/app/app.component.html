@@ -73,3 +73,8 @@
           (click)="resetChrono()">RESET</button>
   <span>{{ chronoService | async | date:'HH:mm:ss:SS' }}</span>
 </div>
+
+<div class="strategies">
+  <app-strategy-host appHostGreetStrategy></app-strategy-host>
+  <app-strategy-host appHostBlameStrategy></app-strategy-host>
+</div>

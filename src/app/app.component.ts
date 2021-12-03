@@ -4,7 +4,7 @@ import { mapTo, startWith } from 'rxjs/operators';
 import {
   LOADED,
   LOADING,
-  PULL_PROVIDERS,
+  LOADING_PROVIDERS,
 } from './pull-refresh/pull-to-refresh.providers';
 import { ChronoService } from './services/chrono.service';
 
@@ -12,7 +12,7 @@ import { ChronoService } from './services/chrono.service';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  providers: [PULL_PROVIDERS],
+  providers: [LOADING_PROVIDERS],
 })
 export class AppComponent {
   public readonly showLoader$: Observable<boolean>;

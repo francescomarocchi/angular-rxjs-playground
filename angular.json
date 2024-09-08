@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "headless-components:build:production"
+              "buildTarget": "headless-components:build:production"
             },
             "development": {
-              "browserTarget": "headless-components:build:development"
+              "buildTarget": "headless-components:build:development"
             }
           },
 
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "headless-components:build"
+            "buildTarget": "headless-components:build"
           }
         },
         "test": {
@@ -99,6 +99,5 @@
         }
       }
     }
-  },
-  "defaultProject": "headless-components"
+  }
 }
